@@ -463,16 +463,17 @@ body.no-scroll {
         flex: 0 1 50%;
         margin-bottom: 20px;
     }
-
-    .dancetour__content {
-    }
 }
 
 @media (max-width: 560px) {
 
+    .dancetour {
+        padding-top: 25px;
+    }
+
     .dancetour__title {
         font-size: 42px;
-        margin: 25px 0 15px 0;
+        margin: 0 0 15px 0;
     }
 
     .dancetour__text {
