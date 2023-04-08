@@ -482,6 +482,11 @@ body.no-scroll {
     .dancetour__col {
         flex: 0 1 100%;
     }
+
+    .dancetour__title--cart {
+        font-size: 36px;
+        margin: 0px 0 15px 0;
+    }
 }
 
 /* Pricing
