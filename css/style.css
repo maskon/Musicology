@@ -362,7 +362,7 @@ body.no-scroll {
 ====================*/
 .dancetour {
     background-color: #e8631c;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     padding-bottom: 100px;
 }
 
@@ -391,6 +391,7 @@ body.no-scroll {
 .dancetour__col {
     flex: 0 1 33.3333%;
     padding: 0 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -412,13 +413,13 @@ body.no-scroll {
 }
 
 .dancetour__img {
-    width: 400px;
-    height: 330px;
+    max-width: 375px;
+    max-height: 330px;
     margin-bottom: 30px;
 }
 
 .dancetour__photo {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
@@ -464,7 +465,7 @@ body.no-scroll {
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
 
     .dancetour {
         padding-top: 25px;
@@ -484,9 +485,11 @@ body.no-scroll {
     }
     
     .dancetour__img {
-        width: 100%;
-        height: auto;
+        max-width: 100%;
+        max-height: 100%;
     }
+    
+
 
     .dancetour__title--cart {
         font-size: 36px;

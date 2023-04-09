@@ -1,12 +1,11 @@
 
 
 .card {
-    padding: 10px;
     min-height: 300px;
 }
 
 .slider-container {
-    padding: 0 15px;
+    padding: 0 15px 0 0;
     position: relative;
     margin: 0 auto;
 }
