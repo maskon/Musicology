@@ -412,14 +412,13 @@ body.no-scroll {
 }
 
 .dancetour__img {
-    max-width: 400px;
-    max-height: 330px;
+    width: 400px;
+    height: 330px;
     margin-bottom: 30px;
 }
 
 .dancetour__photo {
     width: 100%;
-    max-width: 400px;
     height: auto;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
@@ -483,10 +482,59 @@ body.no-scroll {
     .dancetour__col {
         flex: 0 1 100%;
     }
+    
+    .dancetour__img {
+        width: 100%;
+        height: auto;
+    }
 
     .dancetour__title--cart {
         font-size: 36px;
         margin: 0px 0 15px 0;
+    }
+}
+
+
+/* Swiper-slider
+====================*/
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 15px;
+    background-color: tomato;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: navy;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: static;
+    margin-left: 10px;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-container .swiper-wrapper {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .slider-container .swiper-wrapper {
+        justify-content: initial;
+        flex-wrap: nowrap;
     }
 }
 
@@ -942,3 +990,4 @@ body.no-scroll {
         height: 28px;
     }
 }
+
