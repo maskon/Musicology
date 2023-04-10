@@ -994,3 +994,156 @@ body.no-scroll {
     }
 }
 
+
+
+/* Modals */
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1000; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgba(6, 15, 49, 0.9);
+}
+
+.modal__form {
+    margin: 20px 20px 40px 20px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% сверху и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px; /* Может быть больше или меньше, в зависимости от размера экрана */
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Добавить анимация */
+@keyframes animatetop {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+.modal__close {
+    width: 34px;
+    height: 39px;
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    z-index: 1;
+    transition: transform .2s linear;
+}
+
+.modal__close img {
+    width: 30px;
+    height: 34px;
+}
+.modal__close:hover {
+    transform: translateY(-3px);
+}
+
+.modal__body {
+    text-align: center;
+}
+
+.modal__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #333333;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.form__input-modal {
+    width: 300px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    color: #707070;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+
+.modal-btn__body {
+    margin-bottom: 10px;
+}
+
+.modal__btn {
+    width: 300px;
+    height: 60px;
+    background: #F07FAE;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #1d1e22;
+    color: #FFFFFF;
+    margin: 5px;
+    transition-duration: .3s;
+    transition-property: background, color;
+}
+
+.modal__btn:hover {
+    background-color: darkgray;
+}
+.modal__btn:active{
+    position: relative;
+    top: 3px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 767px) {
+    
+    .modal-content {
+        width: 96%;
+    }
+}
+
+@media (max-width: 560px) {
+    
+    .modal__title {
+        font-size: 26px;
+    }
+    
+    .modal-content {
+        padding: 0;
+        margin-top: 170px;
+    }
+    
+    .form__input-modal {
+        width: 100%;
+        height: 40px;
+    }
+    
+    .modal__btn {
+        width: 100%;
+        height: 40px;
+    }
+    
+    .modal__close {
+        width: 25px;
+        height: 25px;
+        top: 10px;
+        right: 12px;
+    }
+    
+    .modal__close img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
