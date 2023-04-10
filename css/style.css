@@ -1014,6 +1014,10 @@ body.no-scroll {
     margin: 20px 20px 40px 20px;
 }
 
+.form__input-modal:focus {
+    box-shadow: 1px 1px 4px 0 #000;
+}
+
 .modal-content {
     position: relative;
     background-color: #fefefe;
